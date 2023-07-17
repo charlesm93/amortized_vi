@@ -1,3 +1,5 @@
 # Supplemental to the paper "Amortized Variational Inference: when and why?"
 
-Code to reproduce the figures and tables can be found in the notebooks in this repo. The code produces the experimental results presented in the paper. The results are saved in the `deliv` repo.
+This repository contains code to reproduce the figures and tables of the paper "Amortized Variational Inference: when and why?" by Charles Margossian and David Blei. The jupyter notebooks can be used to run the experiments in section 4, respectively for the linear, nonlinear, VAE, and timeseries examples. Some of these experiments take a long time to run, so the results of the experiments are saved in the `deliv` directory and can be loaded in the `analyze results` section of the notebooks. Note that we used a GPU to run this code.
+
+In addition, the script `hmm_counter_example.R` provides the code to build a counter-example in the hidden Markov model (HMM) case, demonstrating a learnable function may not exist for HMMs.
